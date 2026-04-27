@@ -1,0 +1,73 @@
+A @ 0.1081: Rcvd from Application Layer: aaaaa
+A @ 0.1081: Passing to Network Layer: [TYPE: DATA, SEQ: 0, CKSUM: 56375, LEN: 5, PAYLOAD: aaaaa]
+A @ 0.1081: Starting Timer
+A @ 0.3418: Rcvd from Application Layer: bbb
+A @ 0.3418: Passing to Network Layer: [TYPE: DATA, SEQ: 1, CKSUM: 15257, LEN: 3, PAYLOAD: bbb]
+B @ 0.4919: Rcvd from Network Layer: [TYPE: DATA, SEQ: 0, CKSUM: 56375, LEN: 5, PAYLOAD: aaaaa]
+B @ 0.4919: Passing to Application Layer: aaaaa
+B @ 0.4919: Passing to Network Layer: [TYPE: ACK, SEQ: 0, CKSUM: 65534]
+B @ 0.6814: Rcvd from Network Layer: [TYPE: DATA, SEQ: 1, CKSUM: 15257, LEN: 3, PAYLOAD: bbb]
+B @ 0.6814: Passing to Application Layer: bbb
+B @ 0.6814: Passing to Network Layer: [TYPE: ACK, SEQ: 1, CKSUM: 65533]
+B @ 0.6814: LOSING PACKET!: [TYPE: ACK, SEQ: 1, CKSUM: 65533]
+A @ 0.8962: Rcvd from Application Layer: dddd
+A @ 0.8962: Passing to Network Layer: [TYPE: DATA, SEQ: 2, CKSUM: 14129, LEN: 4, PAYLOAD: dddd]
+A @ 1.3848: Rcvd from Application Layer: eee
+A @ 1.3848: Passing to Network Layer: [TYPE: DATA, SEQ: 3, CKSUM: 13716, LEN: 3, PAYLOAD: eee]
+A @ 1.4489: Rcvd from Network Layer: [TYPE: ACK, SEQ: 0, CKSUM: 65534]
+A @ 1.4489: Stopping Timer
+A @ 1.4489: Starting Timer
+B @ 2.1434: Rcvd from Network Layer: [TYPE: DATA, SEQ: 2, CKSUM: 14129, LEN: 4, PAYLOAD: dddd]
+B @ 2.1434: Passing to Application Layer: dddd
+B @ 2.1434: Passing to Network Layer: [TYPE: ACK, SEQ: 2, CKSUM: 65532]
+B @ 2.2231: Rcvd from Network Layer: [TYPE: DATA, SEQ: 3, CKSUM: 13716, LEN: 3, PAYLOAD: eee]
+B @ 2.2231: Passing to Application Layer: eee
+B @ 2.2231: Passing to Network Layer: [TYPE: ACK, SEQ: 3, CKSUM: 65531]
+B @ 2.2231: LOSING PACKET!: [TYPE: ACK, SEQ: 3, CKSUM: 65531]
+A @ 2.2303: Rcvd from Application Layer: ggggg
+A @ 2.2303: Passing to Network Layer: [TYPE: DATA, SEQ: 4, CKSUM: 51751, LEN: 5, PAYLOAD: ggggg]
+A @ 2.5289: Rcvd from Network Layer: [TYPE: ACK, SEQ: 2, CKSUM: 65532]
+A @ 2.5289: Stopping Timer
+A @ 2.5289: Starting Timer
+A @ 3.0296: Rcvd from Application Layer: ii
+A @ 3.0296: Passing to Network Layer: [TYPE: DATA, SEQ: 5, CKSUM: 38543, LEN: 2, PAYLOAD: ii]
+B @ 3.2873: Rcvd from Network Layer: [TYPE: DATA, SEQ: 4, CKSUM: 51751, LEN: 5, PAYLOAD: ggggg]
+B @ 3.2873: Passing to Application Layer: ggggg
+B @ 3.2873: Passing to Network Layer: [TYPE: ACK, SEQ: 4, CKSUM: 65530]
+A @ 3.8538: Rcvd from Application Layer: kkkkk
+A @ 3.8538: Passing to Network Layer: [TYPE: DATA, SEQ: 6, CKSUM: 48669, LEN: 5, PAYLOAD: kkkkk]
+A @ 4.4040: Rcvd from Application Layer: ll
+A @ 4.4040: Passing to Network Layer: [TYPE: DATA, SEQ: 7, CKSUM: 37770, LEN: 2, PAYLOAD: ll]
+B @ 4.5558: Rcvd from Network Layer: [TYPE: DATA, SEQ: 5, CKSUM: 38543, LEN: 2, PAYLOAD: ii]
+B @ 4.5558: Passing to Application Layer: ii
+B @ 4.5558: Passing to Network Layer: [TYPE: ACK, SEQ: 5, CKSUM: 65529]
+A @ 4.6027: Rcvd from Application Layer: mmmmm
+A @ 4.6027: Appending to App Layer Buffer: mmmmm
+A @ 5.1379: Rcvd from Network Layer: [TYPE: ACK, SEQ: 4, CKSUM: 65530]
+A @ 5.1379: Stopping Timer
+A @ 5.1379: Starting Timer
+A @ 5.1379: Passing to Network Layer: [TYPE: DATA, SEQ: 8, CKSUM: 47127, LEN: 5, PAYLOAD: mmmmm]
+B @ 6.2014: Rcvd from Network Layer: [TYPE: DATA, SEQ: 6, CKSUM: 48669, LEN: 5, PAYLOAD: kkkkk]
+B @ 6.2014: Passing to Application Layer: kkkkk
+B @ 6.2014: Passing to Network Layer: [TYPE: ACK, SEQ: 6, CKSUM: 65528]
+B @ 6.2014: CORRUPTING PACKET!: [TYPE: ACK, SEQ: 6, CKSUM: 65528]
+B @ 6.3234: Rcvd from Network Layer: [TYPE: DATA, SEQ: 7, CKSUM: 37770, LEN: 2, PAYLOAD: ll]
+B @ 6.3234: Passing to Application Layer: ll
+B @ 6.3234: Passing to Network Layer: [TYPE: ACK, SEQ: 7, CKSUM: 65527]
+A @ 7.2601: Rcvd from Network Layer: [TYPE: ACK, SEQ: 5, CKSUM: 65529]
+A @ 7.2601: Stopping Timer
+A @ 7.2601: Starting Timer
+B @ 8.0780: Rcvd from Network Layer: [TYPE: DATA, SEQ: 8, CKSUM: 47127, LEN: 5, PAYLOAD: mmmmm]
+B @ 8.0780: Passing to Application Layer: mmmmm
+B @ 8.0780: Passing to Network Layer: [TYPE: ACK, SEQ: 8, CKSUM: 65526]
+A @ 8.9381: Rcvd from Network Layer: [TYPE: ACK, SEQ: 7, CKSUM: 65527]
+A @ 8.9381: Stopping Timer
+A @ 8.9381: Starting Timer
+A @ 9.0868: Rcvd from Network Layer: [TYPE: ACK, SEQ: 6, CKSUM: 32760]
+A @ 10.3722: Rcvd from Network Layer: [TYPE: ACK, SEQ: 8, CKSUM: 65526]
+A @ 10.3722: Stopping Timer
+B @ 11.2637: Rcvd from Network Layer
+B @ 11.2637: Passing to Network Layer: [TYPE: ACK, SEQ: 8, CKSUM: 65526]
+A @ 11.6042: Rcvd from Network Layer: [TYPE: ACK, SEQ: 8, CKSUM: 65526]
+B @ 12.6616: Passing to Network Layer: [TYPE: ACK, SEQ: 8, CKSUM: 65526]
+A @ 13.9638: Rcvd from Network Layer: [TYPE: ACK, SEQ: 8, CKSUM: 65526]
